@@ -12,7 +12,7 @@
     <?php
     include 'db.php';
 
-    $sql = "SELECT post_name, post_datetime, post_text FROM posts ORDER BY post_dadetime DESC";
+    $sql = "SELECT post_name, post_datetime, post_text FROM posts ORDER BY post_datetime DESC";
     $result = $conn->query($sql);
 
     if ($result->num_rows > 0) {
