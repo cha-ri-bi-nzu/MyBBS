@@ -18,7 +18,7 @@
     if ($result->num_rows > 0) {
       while($row = $result->fetch_assoc()) {
         echo "<div>";
-        echo "<p><strong>" . htmlspecialchars($row["post_name"]) . "</strong></p>";
+        echo "<p><strong>" . htmlspecialchars($row["post_name"]) . "　/　" . htmlspecialchars($row["post_datetime"]) "</strong></p>";
         echo "<p>" . nl2br(htmlspecialchars($row["post_text"])) . "</p>";
         echo "</div><hr>";
       }
